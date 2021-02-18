@@ -17,3 +17,8 @@ Which actually implies a duplicate entry inside the glusterfs.ca.
 
 This script is about taking a pre-emptive approach and checking the glusterfs.ca for any existing duplicates inside them. ( I'd suggets using ansible
 to run this script in all nodes and get the result to check if everything is well and good before enabling the ssl option ).
+
+To run the script one just needs to give the path to the glusterfs.ca
+# python3 dupl_cert.py <path_to_glusterfs.ca>
+
+If there are any duplicate entries, the script will dump those public keys.
